@@ -50,6 +50,7 @@
     .navBar{
         position:unset;
         width: 60vw;
+        height: 10vh;
     }
 
     .navBarItems{
