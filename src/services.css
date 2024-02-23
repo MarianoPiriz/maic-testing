@@ -1,0 +1,34 @@
+.servicesHeadLine{
+    padding-top: 3%;
+    margin-bottom: 10%;
+    & h2{
+        padding-bottom: 3%;
+    }
+    & p{
+
+        padding-bottom: 3%;
+    }
+}
+.svgContainer{
+    height: 20vh;
+    padding: 15%;
+}
+
+
+
+.iconService{
+    width: 6rem;
+    aspect-ratio: 1/1;
+    fill:var(--bg-blue);
+}
+
+
+.service{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    h3, p, button{
+        margin-bottom: 10%;
+    }
+
+}

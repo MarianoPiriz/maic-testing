@@ -1,0 +1,26 @@
+.contactHeadLine{
+    padding-bottom: 10%;
+}
+
+.option{
+    margin-bottom: 10%;
+
+    h3{
+        padding-bottom: 3%;
+    }
+    p{
+        margin-bottom:3%;
+    }
+    a{
+        font-size: var(--fs-xxs);
+    }
+}
+
+.contactIconContainer{
+    padding-bottom: 3%;
+}
+
+.contactIcon{
+    width: 4rem;
+    fill: var(--bg-blue)
+}

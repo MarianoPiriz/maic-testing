@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: transparent;
+
+}
+
+html{
+    font-size: 62.5%;
+    height: -webkit-fill-available;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a { text-decoration: none;}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --fs-Desktop: clamp(12rem,8vw,30rem);
+    --fs-NoteBook: 10.5rem;
+    --fs-NoteBookSM: 9.5rem;
+    --fs-xxll:clamp(5.5rem, 18vw , 20rem );
+    --fs-xxl:clamp(5.5rem, 16.5vw , 9rem );
+    --fs-xl:clamp(4rem, 22vw, 15rem);
+    --fs-md:5rem;
+    --fs-sm:4rem;
+    --fs-xs:2.2rem;
+    --fs-xxs:1.6rem;
+    --bg-blue:#203963;
+    --bg-red:#ED2F11;
+    --bg-light-red:#EB5F49;
+    --bg-white:#E4E4E4;
+}
+
+h1{
+    color:var(--bg-blue);
+    font-size: clamp(4rem, 5vw + 1rem, 6rem);
+}
+h2{
+    color:var(--bg-blue);
+    font-size: var(--fs-sm);
+}
+
+h3{
+    font-size: var(--fs-xs);
+    color:var(--bg-blue);
+}
+
+p{
+    color: var(--bg-blue);
+    font-size: clamp(1.5rem , 1.8rem, 2rem);
+}
+
+button{
+    border: none;
+    background-color: var(--bg-red);
+    & a{
+        color:var(--bg-white);  
+    }
+}
+
+.btnSM{
+    width:100%;
+    height: 4rem;
+    & a {
+        font-size: var(--fs-xxs);
+        font-weight: 600;    
+    }    
+}
+
+main {
+    width: 100vw;
+    background-color: #E4E4E4;
+    
+    /* background-image: url(./assets/bgHero.jpg);
+    background-size: cover; */
+}
+/* @media all and (min-width: 600px)
+{main {padding: 3%;}} */
+section {
+    scroll-snap-align: start;
+    width: 100%;
+    
+}
+
+.container {
+   padding:3%; 
+   margin-bottom:20%;
+}
+
+
+
+

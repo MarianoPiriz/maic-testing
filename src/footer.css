@@ -1,0 +1,144 @@
+footer{
+    
+    padding: 3%;
+    
+}
+
+.footerContainer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+
+.suscribe{
+    & p{
+        font-size: var(--fs-xxs);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        
+    }
+}
+.formSuscribe{
+    margin-bottom: 10%;
+    input {
+        width: 100%;
+        height: 4rem;
+        margin-bottom: 5%;
+    }
+}
+
+.footerLinksContainer{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: var(--fs-xxs);    
+}
+
+
+.faq{
+    ul{
+        margin-top:1.5rem;
+        
+    }
+}
+.partners{
+    ul{
+        margin-top:1.5rem;
+        
+    }
+}
+.social{
+    ul{
+        margin-top:1.5rem;
+        
+    }
+}
+
+.footerLinks{
+    display: flex;
+    margin-top: 1rem;
+    color:var(--bg-blue);
+}
+
+
+
+
+
+.lastLineContainer{
+    padding-top: 3%;
+    padding-bottom: 5%;
+ 
+    
+    & p{
+        font-size: var(--fs-xxs);
+        margin-bottom: 3%;
+    }
+    & a{
+        font-size: var(--fs-xxs);
+        color:var(--bg-blue); 
+        font-weight: 600;  
+        text-decoration: underline;
+    }
+    
+}
+
+@media all and (min-width:500px){ 
+    .formSuscribe{
+        display: flex;
+    }   
+    .lastLineContainer{
+    display:flex;
+    justify-content: space-between; 
+    & .copy {
+        width: 50%;
+    }
+    & .terms{
+        width: 50%; 
+        display: flex;
+        justify-content: space-between;       
+    }
+   
+    } 
+    .suscribeBtn{
+        width:30%;
+        margin-left:3%;
+    }   
+    .formSuscribe > input {
+        width: 60%;
+        
+    }
+    
+}
+
+@media all and (min-width: 900px){
+    .suscriberFaqLinks{   
+        display:flex;
+        justify-content: space-between;
+        
+        align-content: center;    
+    } 
+    .suscribe {
+        width:50%;
+    }
+    .footerLinksContainer{
+        width:50%;
+        margin-left:3%;
+        padding-top: 0%;
+
+    }
+
+    
+}
+
+@media all and (min-width: 1200px){
+    .suscribeBtn{
+        width:20%;
+        
+    }   
+    .formSuscribe > input {
+        width: 40%;
+        
+    }
+}
