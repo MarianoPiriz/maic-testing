@@ -13,10 +13,10 @@
 
 @media all and (min-width:900px){
     #home{
-        padding-top: 10%;
+        padding-top: 13%;
     }
     .hero{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -35,12 +35,12 @@
    
 }
 
-@media all and ( min-width: 500px){
+/* @media all and ( min-width: 500px){
     .ctaBtn{
         width: clamp(25rem ,30vw + 1rem , 40rem)
     }
 
-}
+} */
 @media all and ( min-width: 900px){
     .ctaBtn{
         width: 50%;

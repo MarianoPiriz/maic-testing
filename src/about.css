@@ -7,3 +7,21 @@
         
     }
 }
+
+@media all and (min-width:930px){
+    #about{
+        padding-top: 10%;
+    }
+
+
+    .aboutFlexContainer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about{
+        width: 60%;
+        button{
+            margin-top: 5%;
+        }
+    }
+}

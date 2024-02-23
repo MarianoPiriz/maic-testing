@@ -32,3 +32,51 @@
     }
 
 }
+
+@media all and (min-width:800px){
+    .servicesHeadLine{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .servicesHeadLine > h2{
+        align-self: center;
+    }
+    .servicesHeadLine > p{
+        text-align: center;
+    }
+    .service > p{
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 930px){
+    #services{
+        padding-top: 8%;
+    }
+
+    .svgContainer{
+        height: fit-content;
+        padding: 5%;
+    }
+    
+    
+    
+    .service > h3 {
+            margin-bottom: 5%;         
+    } 
+    .service > p {
+            margin-bottom: 5%;         
+    } 
+    .service > button {
+            margin-bottom: 5%;         
+    } 
+    
+}
+
+@media all and (min-width: 1500px){
+.servicesFlexContainer{
+        display:flex;
+        gap: 13rem;
+    }
+}

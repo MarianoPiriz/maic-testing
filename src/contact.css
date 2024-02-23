@@ -9,7 +9,7 @@
         padding-bottom: 3%;
     }
     p{
-        margin-bottom:3%;
+        margin-bottom:5%;
     }
     a{
         font-size: var(--fs-xxs);
@@ -23,4 +23,18 @@
 .contactIcon{
     width: 4rem;
     fill: var(--bg-blue)
+}
+
+@media all and (min-width:800px){
+    .option{ width:33%;}
+    .contactOptions{
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+@media all and (min-width:930px){
+    #contact{
+        padding-top: 10%;
+    }
 }

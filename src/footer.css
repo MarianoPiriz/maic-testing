@@ -112,7 +112,7 @@ footer{
     
 }
 
-@media all and (min-width: 900px){
+@media all and (min-width: 800px){
     .suscriberFaqLinks{   
         display:flex;
         justify-content: space-between;
