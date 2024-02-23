@@ -2,6 +2,7 @@ import './style.css';
 import './renderer.js';
 import './datguiConf.js';
 import './router/index.routes.js';
+import './navBar.css';
 import './home.css';
 import './about.css';
 import './services.css';
