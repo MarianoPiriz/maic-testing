@@ -140,9 +140,9 @@ button{
 }
 
 
-
 main {
     width: 100vw;
+
     /* background-color: #E4E4E4; */
     
     /* background-image: url(./assets/bgHero.jpg);
@@ -163,6 +163,27 @@ section {
 .flx{
     display: flex;
     justify-content: space-between;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: var(--bg-navy-blue);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 200px;
+        height: 100px;
+        background-image: url(./assets/logoMaic.svg);
+        background-position: center;
+        background-size: cover;
+        
+    }
 }
 
 

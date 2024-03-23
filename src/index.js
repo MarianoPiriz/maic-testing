@@ -1,4 +1,5 @@
 import './style.css';
+import './preloader.js';
 import './renderer.js';
 import './mouseevents.js';
 import './langSelector.js';
