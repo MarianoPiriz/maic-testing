@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://marianopiriz.github.io/maic-testing/",
   "scripts": {
     "build": "webpack --mode=production --config=webpack.config.prod.js",
     "dev": "webpack --mode=development --config=webpack.config.dev.js",
     "start": "webpack-dev-server --config=webpack.config.dev.js --open",
-    "server": "node server.js"
+    "predeploy": "npm run build",
+    "deploy": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +39,7 @@
     "@studio-freight/lenis": "^1.0.39",
     "dat.gui": "^0.7.9",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.1",
     "locomotive-scroll": "^4.1.4",
     "three": "^0.153.0",
