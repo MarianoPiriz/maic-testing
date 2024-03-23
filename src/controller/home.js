@@ -1,3 +1,1 @@
-export const homePage = () => {
-  console.log('estas en home');
-};
+export const homePage = () => {};

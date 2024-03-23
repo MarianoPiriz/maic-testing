@@ -1,0 +1,240 @@
+/*BreakPoints*/
+/**********************************************************500PX*/
+@media all and (min-width: 500px) and (min-height:500px){
+
+    .navContainer{
+        #logoSvg{
+            display: inline-block;
+        }
+    }
+    button{
+        width: 30vw;
+    }
+
+    .heroHeader{
+        font-size: var(--fs-md);
+    }
+    .option{
+        padding: 5% 0;
+    }
+
+    .about{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .formSuscribe{
+        display: flex;
+    }   
+    .lastLineContainer{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    & .copy {
+        width: 40%;
+    }
+    & .terms{
+        width: 40%; 
+        display: flex;
+        justify-content: space-between;       
+    }
+   
+    } 
+    .suscribeBtn{
+        width:30%;
+        margin-left:3%;
+    }   
+    .formSuscribe > input {
+        width: 60%;
+        
+    }
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++900PX*/
+@media all and (min-width: 900px){
+       
+    .suscriberFaqLinks{   
+        display:flex;
+        justify-content: space-between;
+        
+        align-content: center;    
+    } 
+    .suscribe {
+        width:50%;
+    }
+    .footerLinksContainer{
+        width:50%;
+        margin-left:3%;
+        padding-top: 0%;
+
+    }
+}
+/*******************************************************************1000PX*/
+@media all and (min-width: 1000px){
+    
+    button{
+        width:25vw;
+    }
+    
+    .hero{
+        width: 60%;
+    }
+    .heroHeader{
+
+        line-height: 0.9;
+    }
+
+}
+
+/*********************************************************************1200PX*/
+@media all and (min-width: 1190px){
+    
+    .burgerMenu{ display: none;}
+    .navContainer{
+
+        align-items: flex-start;
+        .navBar{
+            display:block;
+            width:50%;  
+        }
+
+        .langSelectorContainer{
+            width: 30%; 
+        }
+        .logoBtnContainer{
+            width: 30%;
+        }
+
+        #logoSvg{ 
+            width: 30rem;
+        }
+    
+        .navBarItems{                
+            display: flex;        
+            align-items: flex-end;
+            justify-content: space-evenly;
+            padding-top: 0%;
+            li{
+                position: relative;
+            }
+        }
+        .navBarItem{
+            font-size: var(--fs-xxs);
+            margin-left: 0%;
+        }
+    
+        .navBarItem::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            width: 100%;
+            height: 10px;
+            background-color:var(--bg-venetian-red);
+            transition: left 500ms ease-in-out;
+        }
+    
+        .navBarItem:hover::after{
+            left: -100%;
+        }
+    }
+
+    .about{
+        width: 55vw;
+        justify-content: center;
+    }
+    .servicesHeadLine{
+        text-align: center;
+        padding: 4% 20%;
+        height: fit-content;
+    }
+
+    .servicesOptions{
+        display: flex;
+        gap:3%;
+    }
+
+    .service{
+        text-align: center;
+        height: fit-content;
+        padding:0%;
+        /* justify-content: space-between; */
+    }
+
+    .contactOptions{
+        display:flex;
+        justify-content: space-between;
+        gap:3%;
+    }
+
+    .option{
+        width: 30%;
+    }
+
+    .suscribe {
+        width:50%;
+    }
+
+    .suscribeBtn{
+        width:35%;
+        
+    }   
+    .formSuscribe > input {
+        width: 40%;
+        
+    }
+
+    .bottomLinks{
+        display:none;
+    }
+
+    .trainingContainer, .consultancyContainer, .managementContainer{
+        flex-wrap: nowrap; 
+    }
+    .textWrapper{
+        width: 50%;
+    }
+    .imgWrapper{
+        width: 50%;
+    }
+   
+    
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++1500PX*/
+@media all and (min-width: 1500px){}
+/************************************************************************1800PX*/
+@media all and (min-width: 1800px){
+    .hero{
+        width: 50%;
+    }
+    .heroHeader{
+        font-size: var(--fs-lg);
+    }
+    button{
+        width: 15vw;
+    }
+
+    #about{
+        padding-top: min(10%,15rem);
+    }
+    .about{width:33vw;}
+    #services{
+        height:100vh;
+    }
+    .services{
+    padding-top: 10%;
+    }
+    .service{
+        padding: 5% 0;
+    }
+    .servicesHeadLine{ padding: 0 20%;}
+
+    .faqPage{
+        padding: 10%  20%;
+    }
+    
+
+}

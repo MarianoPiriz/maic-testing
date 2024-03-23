@@ -1,3 +1,1 @@
-export const aboutPage = () => {
-  console.log('estas en about');
-};
+export const aboutPage = () => {};

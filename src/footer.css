@@ -1,26 +1,21 @@
 footer{
-    
-    padding: 3%;
+    margin-bottom: 0;
     
 }
 
 .footerContainer{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
+    padding-top: 2%;
+    padding-bottom: 0%;    
 }
 
 
-.suscribe{
-    & p{
-        font-size: var(--fs-xxs);
-        padding-top: 3%;
-        padding-bottom: 3%;
-        
-    }
-}
+
 .formSuscribe{
     margin-bottom: 10%;
+    input{
+        border: none;
+        padding: 1rem;
+    }
     input {
         width: 100%;
         height: 4rem;
@@ -29,37 +24,44 @@ footer{
 }
 
 .footerLinksContainer{
-    padding-top: 3%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: var(--fs-xxs);    
+     
 }
 
 
 .faq{
-    ul{
+
+    width: 33%;
+    a{
         margin-top:1.5rem;
-        
+        font-size: var(--fs-xxs);
     }
 }
 .partners{
-    ul{
+    a{
         margin-top:1.5rem;
-        
+        font-size: var(--fs-xxs);
     }
 }
 .social{
-    ul{
+    height: fit-content;
+    a{
         margin-top:1.5rem;
-        
+        font-size: var(--fs-xxs); 
     }
 }
 
 .footerLinks{
     display: flex;
+    align-items: flex-end;
     margin-top: 1rem;
     color:var(--bg-blue);
+    span{
+    padding-left: 3%;
+    
+    }
 }
 
 
@@ -67,13 +69,10 @@ footer{
 
 
 .lastLineContainer{
-    padding-top: 3%;
-    padding-bottom: 5%;
- 
     
     & p{
         font-size: var(--fs-xxs);
-        margin-bottom: 3%;
+    
     }
     & a{
         font-size: var(--fs-xxs);
@@ -84,61 +83,3 @@ footer{
     
 }
 
-@media all and (min-width:500px){ 
-    .formSuscribe{
-        display: flex;
-    }   
-    .lastLineContainer{
-    display:flex;
-    justify-content: space-between; 
-    & .copy {
-        width: 50%;
-    }
-    & .terms{
-        width: 50%; 
-        display: flex;
-        justify-content: space-between;       
-    }
-   
-    } 
-    .suscribeBtn{
-        width:30%;
-        margin-left:3%;
-    }   
-    .formSuscribe > input {
-        width: 60%;
-        
-    }
-    
-}
-
-@media all and (min-width: 800px){
-    .suscriberFaqLinks{   
-        display:flex;
-        justify-content: space-between;
-        
-        align-content: center;    
-    } 
-    .suscribe {
-        width:50%;
-    }
-    .footerLinksContainer{
-        width:50%;
-        margin-left:3%;
-        padding-top: 0%;
-
-    }
-
-    
-}
-
-@media all and (min-width: 1200px){
-    .suscribeBtn{
-        width:20%;
-        
-    }   
-    .formSuscribe > input {
-        width: 40%;
-        
-    }
-}

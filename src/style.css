@@ -5,85 +5,145 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    background-color: transparent;
-
 }
 
-html{
-    font-size: 62.5%;
-    height: -webkit-fill-available;
-    scroll-snap-type: y proximity;
-    scroll-padding-top: 5%;
-    font-family: Arial, Helvetica, sans-serif;
+.hidden{
+    display:none;
 }
 
-a { text-decoration: none;}
-
-
+.hide{
+    opacity: 0;
+}
 
 ::-webkit-scrollbar{
     display: none;
 }
 
+/*LENIS CSS 
+
+/* html.lenis, html.lenis body {
+    height: auto;
+  } 
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+   .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  } */
+
 :root{
-    --fs-Desktop: clamp(12rem,8vw,30rem);
-    --fs-NoteBook: 10.5rem;
-    --fs-NoteBookSM: 9.5rem;
-    --fs-xxll:clamp(5.5rem, 18vw , 20rem );
-    --fs-xxl:clamp(5.5rem, 16.5vw , 9rem );
-    --fs-xl:clamp(4rem, 22vw, 15rem);
-    --fs-md:5rem;
-    --fs-sm:4rem;
-    --fs-xs:2.2rem;
-    --fs-xxs:1.6rem;
+    --fs-xxl:10rem;   
+    --fs-xl:7rem;   
+    --fs-lg:5rem;
+    --fs-md:3.5rem;
+    --fs-sm:2.3rem;
+    --fs-xs: 1.8rem;
+    --fs-xxs:1.3rem;
+    --bg-black:#000000;
+    --bg-extra-dark-blue:#12274D;
+    --bg-dark-blue:#1A2D4E;    
+    --bg-navy-blue:#132257;    
     --bg-blue:#203963;
+    --bg-lightBlue:#607496;
     --bg-red:#ED2F11;
-    --bg-light-red:#EB5F49;
+    --bg-venetian-red:#cd1409;
+    --bg-blood-red:#720000;
+    --bg-light-red:#f57966;
     --bg-white:#E4E4E4;
+    --bg-yellow-white:#EEEDDD;
+    --bg-complementary-1:#B5A688;
+    --bg-complementary-2:#F5CD7A;
+    --bg-complementary-3:#858FA0;
+    --bg-complementary-4:#756E5E;
+    --bg-complementary-5:#7AF5F5;
+    --bg-analog-1:#7A81F5;
 }
 
-h1{
-    color:var(--bg-blue);
-    font-size: clamp(4rem, 5vw + 1rem, 6rem);
+ @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&&family=Figtree:ital,wght@0,300..900;1,300..900&family=Passion+One:wght@400;700;900&display=swap');  
+
+body{
+    background-color:var(--bg-yellow-white);
 }
+html{
+    font-size: 62.5%;
+    height: -webkit-fill-available;
+    /* scroll-snap-type: y proximity; */
+    /* scroll-padding-top: 5%; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2, h3, p, a {
+    color: var(--bg-navy-blue);
+}
+
+h1{    
+    font-size: var(--fs-md);
+    /* font-family: "Passion One", sans-serif; */
+    /* font-family:'Kanit', sans-serif; */
+    line-height: 0.8;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 9px;
+}
+
 h2{
-    color:var(--bg-blue);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-md);
+    font-weight: 900;
 }
 
 h3{
-    font-size: var(--fs-xs);
-    color:var(--bg-blue);
+    font-size: var(--fs-sm);
+    font-weight: 900;
 }
 
 p{
-    color: var(--bg-blue);
-    font-size: clamp(1.5rem , 1.8rem, 2rem);
+    font-size: var(--fs-xs);
+    margin: 5% 0% 5% 0%;
+    text-align: justify;
+    /* backdrop-filter: blur(3.5px); */
+}
+
+a{
+    font-family: "Figtree", sans-serif;
+    font-style: normal;         
+    font-size: var(--fs-xs);
+    text-decoration: none;
+    color:var(--bg-white);
 }
 
 button{
     border: none;
     width:100%;
     height: 4rem;
-    background-color: var(--bg-red);
-    & a{
-        font-size: var(--fs-xxs);
-        font-weight: 600;  
-        color:var(--bg-white);  
-    }
+    background-color: var(--bg-venetian-red); 
 }
 
-@media all and (min-width:500px){
-    .btnSM{
-        width: clamp(25rem ,30vw + 1rem , 40rem);
-    }
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid var(--bg-blue);
+    
+    a{
+        color:var(--bg-blue);
+        font-weight: 700;
+    }   
 }
 
 
 
 main {
     width: 100vw;
-    background-color: #E4E4E4;
+    /* background-color: #E4E4E4; */
     
     /* background-image: url(./assets/bgHero.jpg);
     background-size: cover; */
@@ -92,14 +152,20 @@ main {
 {main {padding: 3%;}} */
 section {
     scroll-snap-align: start;
-    width: 100%;
-    height: fit-content;
+    width: 100%;    
 }
 
 .container {
    padding:3%; 
-   margin-bottom:20%;
+   
 }
+
+.flx{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 

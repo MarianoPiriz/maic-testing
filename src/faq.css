@@ -1,0 +1,53 @@
+
+
+#faqOne , #faqTwo , #faqThree ,  #faqFour{
+    margin-top: 5%;
+}
+
+.faqPage{
+    height: fit-content;
+    display:grid;
+    align-content: end;
+    padding-top: 10%;
+    
+}
+.headerWrapper{
+    width:80%;
+}
+
+.faqHeader{
+    font-size: var(--fs-xs);
+}
+
+.faqBtn{
+    background-color: transparent;
+    width:fit-content;
+}
+
+
+.faqParagraph{
+    height: 0;
+    margin: 2.5% 0;
+}
+
+#logoFaqSvg{
+    fill:var(--bg-blue);
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+}
+
+.faqFooter{
+    padding-top: 5%;
+   
+}
+
+.signs{
+    display:inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 3rem;    
+    aspect-ratio: 1 /1;
+    background-color: var(--bg-blue);
+    color: var(--bg-white);
+    border-radius: 99999px;
+}

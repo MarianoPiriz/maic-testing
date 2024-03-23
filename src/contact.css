@@ -1,18 +1,15 @@
 .contactHeadLine{
-    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
-.option{
-    margin-bottom: 10%;
 
-    h3{
-        padding-bottom: 3%;
-    }
-    p{
-        margin-bottom:5%;
-    }
+.option{ 
+    padding: 20% 0;     
     a{
-        font-size: var(--fs-xxs);
+        font-size: var(--fs-xs);
+        color: var(--bg-blue);
+        text-decoration: underline;
     }
 }
 
@@ -21,20 +18,6 @@
 }
 
 .contactIcon{
-    width: 4rem;
+    width: 3rem;
     fill: var(--bg-blue)
-}
-
-@media all and (min-width:800px){
-    .option{ width:33%;}
-    .contactOptions{
-        display: flex;
-        gap: 5rem;
-    }
-}
-
-@media all and (min-width:930px){
-    #contact{
-        padding-top: 10%;
-    }
 }
