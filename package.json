@@ -9,7 +9,7 @@
     "dev": "webpack --mode=development --config=webpack.config.dev.js",
     "start": "webpack-dev-server --config=webpack.config.dev.js --open",
     "predeploy": "npm run build",
-    "deploy": "node server.js"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
