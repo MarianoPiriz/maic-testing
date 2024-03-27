@@ -161,7 +161,9 @@
         text-align: center;
         height: fit-content;
         padding:0%;
-        /* justify-content: space-between; */
+        width: 33%;
+        height: 40vh;
+        justify-content: space-between; 
     }
 
     .contactOptions{
@@ -217,19 +219,19 @@
         width: 15vw;
     }
 
-    #about{
+    /* #about{
         padding-top: min(10%,15rem);
-    }
-    .about{width:33vw;}
+    } */
+    .about{width:40vw;}
     #services{
         height:100vh;
     }
     .services{
-    padding-top: 10%;
+    padding-top: 7%;
     }
-    .service{
+    /* .service{
         padding: 5% 0;
-    }
+    } */
     .servicesHeadLine{ padding: 0 20%;}
 
     .faqPage{
